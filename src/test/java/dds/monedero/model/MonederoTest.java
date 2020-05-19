@@ -18,7 +18,7 @@ public class MonederoTest {
   }
 
   @Test
-  public void Poner() {
+  public void PonerDineroEnMonederoyVerificarSaldo() {
     cuenta.poner(1500);
     Assert.assertEquals(1500,cuenta.getSaldo(),0);
   }
@@ -29,7 +29,7 @@ public class MonederoTest {
   }
 
   @Test
-  public void TresDepositos() {
+  public void RealizarTresDepositosyVerificarSaldo() {
     cuenta.poner(1500);
     cuenta.poner(456);
     cuenta.poner(1900);
